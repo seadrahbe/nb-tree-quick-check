@@ -14,6 +14,15 @@ public class NbQuickCheck {
     if(!tree.containsKey(root)) {
       return;
     }
+
+    System.out.println(root);
+
+    if (!tree.get(root).isEmpty()) {
+      for (Integer num : tree.get(root)) {
+        preOrder(tree, num);
+      }
+    }
+
   }
 
   /**
